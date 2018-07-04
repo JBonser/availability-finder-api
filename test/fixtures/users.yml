@@ -4,10 +4,12 @@ one:
   email: MyString
   password: MyString
   firstName: MyString
+  string: MyString
   lastName: MyString
 
 two:
   email: MyString
   password: MyString
   firstName: MyString
+  string: MyString
   lastName: MyString
