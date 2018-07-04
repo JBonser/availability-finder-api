@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180703234759) do
+ActiveRecord::Schema.define(version: 20180704161418) do
 
   create_table "userdates", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "user_id"
@@ -22,12 +22,11 @@ ActiveRecord::Schema.define(version: 20180703234759) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email"
-    t.string   "password"
+    t.string   "password_digest"
     t.string   "firstName"
-    t.string   "string"
     t.string   "lastName"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

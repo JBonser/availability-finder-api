@@ -1,5 +1,5 @@
 class UserdatesController < ApplicationController
-  before_action :set_userdate, only: [:show, :update, :destroy]
+  before_action :authenticate_user, set_userdate, only: [:show, :update, :destroy]
 
   # GET /userdates
   def index
