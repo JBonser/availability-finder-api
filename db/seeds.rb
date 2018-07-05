@@ -9,3 +9,5 @@
 users = User.create([{email: 'test', password: 'test', firstName: 'Test', lastName: 'User'}])
 
 userdates = Userdate.create({date: 2.days.ago, user_id: users.first.id})
+userdates2 = Userdate.create({date: 1.days.ago, user_id: users.first.id})
+userdates3 = Userdate.create({date: 4.days.ago, user_id: users.first.id})

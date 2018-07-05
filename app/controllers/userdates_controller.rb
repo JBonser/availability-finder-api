@@ -38,6 +38,10 @@ class UserdatesController < ApplicationController
     @userdate.destroy
   end
 
+  def find_by_user
+    render json: Userdate.where('user_id' => params[:id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_userdate
